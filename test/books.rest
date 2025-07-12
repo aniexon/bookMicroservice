@@ -1,0 +1,36 @@
+
+@host=http://localhost:3000/books
+
+
+GET {{ host }} HTTP/1.1
+###
+
+GET {{ host }}/2 HTTP/1.1
+###
+
+POST {{ host }} HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "year": 1967,
+    "isbn": "9788497592208",
+    "stock": 10
+}
+###
+
+PATCH {{ host }}/19 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":19,
+    "title": "ficciones",
+    "author": "Mario Vargas Llosa",
+    "year": 1944,
+    "isbn": "9788432223882",
+    "stock": 9
+}
+###
+
+DELETE {{ host }}/1 HTTP/1.1
