@@ -56,6 +56,29 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+# instarlar paquetes
+```bash
+
+$ npm install nest
+
+$ npm install class-validator class-transformer
+
+$ npm install @nestjs/mapped-types
+
+$ npm install @nestjs/microservices
+
+$ npm install joi
+
+$ npm install dotenv
+-------------------
+# instalar prima agregar los siguientes paquetes
+$ npm install prisma --save-dev
+
+$ npx prisma
+
+$ npx prisma init
+$ npx prisma migrate dev --name init
+
 
 ## Deployment
 
